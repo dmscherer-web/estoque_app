@@ -35,6 +35,11 @@
                 android:name="io.flutter.embedding.android.NormalTheme"
                 android:resource="@style/NormalTheme" />
 
+            <!-- ✅ OBRIGATÓRIO: indica uso do Flutter embedding v2 -->
+            <meta-data
+                android:name="flutterEmbedding"
+                android:value="2" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -61,9 +66,6 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <meta-data
-            android:name="flutterEmbedding"
-            android:value="2" />
     </application>
 
     <!-- Suporte a edge-to-edge no Android 15+ -->
@@ -73,4 +75,5 @@
             <data android:mimeType="text/*" />
         </intent>
     </queries>
+
 </manifest>
